@@ -4,19 +4,19 @@ public class Player {
     static int x = 1 + (int) Math.floor(6 * Math.random());
     static int y = 0;
     
-    static void fall() {
+    public void fall() {
         while (Main.world[y][x] == 0) {
             y++;
         }
         y--;
     }
 
-    public static void spawn() {
+    public void spawn() {
         fall();
         Main.world[y][x] = 4;
     }
     
-    public static void movePlayer() {
+    public void movePlayer() {
         Scanner scan = new Scanner(System.in);
         System.out.println("Which way would you like to move? (LEFT/RIGHT/LEFTUP/RIGHTUP)");
         //System.out.println("(Please use lowercase!)");
