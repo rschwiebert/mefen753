@@ -1,0 +1,207 @@
+/* Paperclip CSS v1.0.0 */
+
+body {
+    margin: 0; /* Remove default margin */
+    width: 100%;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", Arial, sans-serif;
+}
+
+red, .red, .text-red {
+    color: #f22c2c;
+}
+
+.bg-red {
+    background-color: #f22c2c;
+}
+
+orange, .orange, .text-orange {
+    color: #ff8519;
+}
+
+.bg-orange {
+    background-color: #ff8519;
+}
+
+yellow, .yellow, .text-yellow {
+    color: #ebc634;
+}
+
+.bg-yellow {
+    background-color: #ebc634;
+}
+
+lime, .lime, .text-lime {
+    color: lime;
+}
+
+.bg-lime {
+    background-color: lime;
+}
+
+green, .green, .text-green {
+    color: #138516;
+}
+
+.bg-green {
+    background-color: #138516;
+}
+
+cyan, .cyan, .text-cyan {
+    color: #0dcaf0;
+}
+
+.bg-cyan {
+    background-color: #0dcaf0;
+}
+
+primary, .primary, .text-primary {
+    color: #0d6efd;
+}
+
+.bg-primary {
+    background-color: #0d6efd;
+}
+
+darkblue, .darkblue, text-darkblue {
+    color: blue;
+}
+
+.bg-darkblue {
+    background-color: blue;
+}
+
+purple, .purple, .text-purple {
+    color: #6610f2;
+}
+
+.bg-purple {
+    background-color: #6610f2;
+}
+
+white, .white, .text-white {
+    color: white;
+}
+
+black, .black, .text-black {
+    color: black;
+}
+
+.bg-black {
+    background-color: black;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 !important;
+    font-weight: 500;
+}
+
+p {
+    margin: 0;
+}
+
+h1 {
+    font-size: calc(1.75rem + 1.5vw);
+}
+
+h2 {
+    font-size: calc(1.425rem + 1vw);
+}
+
+h3 {
+    font-size: calc(1.3rem + 0.6vw);
+}
+
+h4 {
+    font-size: calc(1.275rem + 0.3vw);
+}
+
+h5 {
+    font-size: 1.25rem;
+}
+
+h6 {
+    font-size: 1rem;
+}
+
+.small:not(h1, h2, h3, h4, h5, h6) {
+    font-size: 0.75em;
+}
+
+.large:not(h1, h2, h3, h4, h5, h6) {
+    font-size: 1.25em;
+}
+
+h1.small, h2.small, h3.small, h4.small, h5.small, h6.small {
+    transform: scale(0.75);
+    /*transform-origin: top left;*/
+    display: inline-block;
+}
+
+h1.large, h2.large, h3.large, h4.large, h5.large, h6.large {
+    transform: scale(1.25);
+    /*transform-origin: top left;*/
+    display: inline-block;
+}
+
+.centered, .text-center {
+    text-align: center !important;
+}
+
+.align-right {
+    text-align: right;
+}
+
+highlight, .highlight {
+    width: auto;
+    padding: 0;
+    height: auto;
+    box-sizing: border-box;
+    background-color: yellow;
+}
+
+container {
+    display: block;
+    margin-left: 10%;
+    margin-right: 10%;  
+    padding: 0;    
+    height: auto;       /* Height adjusts based on content */
+    box-sizing: border-box;
+}
+
+container-fluid {
+    display: block;
+    width: 100%;
+    margin: 0;  
+    padding: 0;    
+    height: auto;       /* Height adjusts based on content */
+    box-sizing: border-box;
+}
+
+container.rounded, container-fluid.rounded {
+    border-radius: 5px;
+}
+
+.p-1 {
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.p-2 {
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+}
+
+.p-3 {
+    padding-top: 3.5%;
+    padding-bottom: 4%;
+}
+
+.p-4 {
+    padding-top: 4.25%;
+    padding-bottom: 4.6666667%;
+}
+
+.p-5 {
+    padding-top: 5%;
+    padding-bottom: 6%;
+}
