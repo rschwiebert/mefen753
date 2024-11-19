@@ -3,22 +3,35 @@
 body {
     margin: 0; /* Remove default margin */
     width: 100%;
-    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", Arial, sans-serif;
+    font-family: system-ui, -apple-system, "Segoe UI", BlinkMacSystemFont, Roboto, "Noto Sans", proxima-nova, "Helvetica Neue", Arial, sans-serif;
 }
 
 :root {
     --red: #f22c2c;
+    --red-hover: #d92828;
     --orange: #ff8519;
+    --orange-hover: #e57816;
     --yellow: #ebc634;
-    --lime: #00FF00;
+    --yellow-hover: #d3b231;
+    --lime: #00ff00;
+    --lime-hover: #00e500;
     --green: #138516;
+    --green-hover: #137113;
     --cyan: #0dcaf0;
+    --cyan-hover: #0cb6d8;
     --primary: #0d6efd;
+    --primary-hover: #0c63e4; /* #0b5ed7 old */
     --darkblue: #0000ff;
+    --darkblue-hover: #0000cc;
     --purple: #6610f2;
+    --purple-hover: #5c0dd8;
     --white: #ffffff;
-    --dark: #1a1a1a;
+    --dark: #141414;
     --black: #000000;
+}
+
+body {
+    color: var(--dark);
 }
 
 red, .red, .text-red {
@@ -111,6 +124,7 @@ black, .black, .text-black {
 
 p {
     margin: 0;
+    height: auto;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -207,6 +221,10 @@ div.container.w-90 {
     margin-right: 5%;
 }
 
+.m-0 {
+    margin: 0;
+}
+
 .m-1 {
     margin: 1%;
 }
@@ -233,6 +251,18 @@ div.container.w-90 {
 
 .mt-2 {
     margin-top: 2%;
+}
+
+.mt-3 {
+    margin-top: 3%;
+}
+
+.mt-4 {
+    margin-top: 4%;
+}
+
+.mt-5 {
+    margin-top: 5%;
 }
 
 .small:not(h1, h2, h3, h4, h5, h6) {
@@ -291,7 +321,6 @@ div.container {
 div.container-fluid {
     display: block;
     width: 100%;
-    margin: 0;  
     padding: 0;    
     height: auto;       /* Height adjusts based on content */
     box-sizing: border-box;
@@ -352,6 +381,10 @@ div.container.rounded, div.container-fluid.rounded {
     font-weight: bold;
 }
 
+.p-0 {
+    padding: 0;
+}
+
 .p-1 {
     padding: 1% !important;
 }
@@ -372,6 +405,135 @@ div.container.rounded, div.container-fluid.rounded {
     padding: 5% !important;
 }
 
+button {
+    border: none;
+    padding: 0.5em 0.75em !important;
+    border-radius: 0.375em;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+button:hover {
+    background-color: #dddddd;
+}
+
+button.primary {
+    background-color: var(--primary);
+    color: white; /* white text against background */
+}
+
+button.primary:hover {
+    background-color: var(--primary-hover);
+}
+
+button.red {
+    background-color: var(--red);
+    color: white;
+}
+
+button.red:hover {
+    background-color: var(--red-hover);
+}
+
+button.orange {
+    background-color: var(--orange);
+    color: white;
+}
+
+button.orange:hover {
+    background-color: var(--orange-hover);
+}
+
+button.yellow {
+    background-color: var(--yellow);
+    color: white;
+}
+
+button.yellow:hover {
+    background-color: var(--yellow-hover);
+}
+
+button.lime {
+    background-color: var(--lime);
+    color: white;
+}
+
+button.lime:hover {
+    background-color: var(--lime-hover);
+}
+
+button.green {
+    background-color: var(--green);
+    color: white;
+}
+
+button.green:hover {
+    background-color: var(--green-hover)
+}
+
+button.cyan {
+    background-color: var(--cyan);
+    color: white;
+}
+
+button.cyan:hover {
+    background-color: var(--cyan-hover);
+}
+
+button.darkblue {
+    background-color: var(--darkblue);
+    color: white;
+}
+
+button.darkblue:hover {
+    background-color: var(--darkblue-hover);
+}
+
+button.purple {
+    background-color: var(--purple);
+    color: white;
+}
+
+button.purple:hover {
+    background-color: var(--purple-hover);
+}
+
 .shadow {
     text-shadow: 2px 2px #606060;
+}
+
+iframe:not(iframe.border) {
+    border: none;
+}
+
+div.container-fluid.navbar {
+    background-color: #333 !important;
+    color: white;
+    margin-top: 0;
+    width: 100% !important;
+    display: flex;
+    position: fixed;
+}
+
+div.container-fluid.navbar div.container.nav-item.text-logo {
+    font-weight: 750;
+    transform: scale(1.5);
+}
+
+div.container-fluid.navbar div.container.nav-item {
+    margin-right: 15px;
+}
+
+div.container-fluid.navbar div.container.nav-item:last-child {
+    margin-right: 0;
+}
+
+div.container-fluid.navbar div.container.nav-item a {
+    color: white;
+    text-decoration: none;
+}
+
+div.container-fluid.navbar div.container.nav-item a:hover {
+    color: #bcbcbc;
 }
